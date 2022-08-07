@@ -82,7 +82,7 @@
           <AfterMake>
             <RunUserProg1>1</RunUserProg1>
             <RunUserProg2>0</RunUserProg2>
-            <UserProg1Name>.keil\copy.bat mcuf_m0.lib</UserProg1Name>
+            <UserProg1Name>.keil\copy.bat support_cmsis_rtos_m0.lib</UserProg1Name>
             <UserProg2Name></UserProg2Name>
             <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
             <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
@@ -176,7 +176,7 @@
             <GenPPlst>0</GenPPlst>
             <AdsCpuType>"Cortex-M0"</AdsCpuType>
             <RvctDeviceName></RvctDeviceName>
-            <mOS>0</mOS>
+            <mOS>1</mOS>
             <uocRom>0</uocRom>
             <uocRam>0</uocRam>
             <hadIROM>1</hadIROM>
@@ -336,10 +336,10 @@
             <v6WtE>0</v6WtE>
             <v6Rtti>0</v6Rtti>
             <VariousControls>
-              <MiscControls>-fexceptions -frtti</MiscControls>
+              <MiscControls>-fexceptions</MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>.\src\main;.\src\resources</IncludePath>
+              <IncludePath>.\src\main;.\src\resources;.\ref\mcuf\src\main</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -357,7 +357,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>..\framework</IncludePath>
+              <IncludePath></IncludePath>
             </VariousControls>
           </Aads>
           <LDads>
@@ -583,7 +583,7 @@
           <AfterMake>
             <RunUserProg1>1</RunUserProg1>
             <RunUserProg2>0</RunUserProg2>
-            <UserProg1Name>.keil\copy.bat mcuf_m0plus.lib</UserProg1Name>
+            <UserProg1Name>.keil\copy.bat support_cmsis_rtos_m0plus.lib</UserProg1Name>
             <UserProg2Name></UserProg2Name>
             <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
             <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
@@ -677,7 +677,7 @@
             <GenPPlst>0</GenPPlst>
             <AdsCpuType>"Cortex-M0+"</AdsCpuType>
             <RvctDeviceName></RvctDeviceName>
-            <mOS>0</mOS>
+            <mOS>1</mOS>
             <uocRom>0</uocRom>
             <uocRam>0</uocRam>
             <hadIROM>1</hadIROM>
@@ -837,10 +837,10 @@
             <v6WtE>0</v6WtE>
             <v6Rtti>0</v6Rtti>
             <VariousControls>
-              <MiscControls></MiscControls>
+              <MiscControls>-fexceptions</MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>.\src\main;.\src\resources</IncludePath>
+              <IncludePath>.\src\main;.\src\resources;.\ref\mcuf\src\main</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -858,7 +858,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>..\framework</IncludePath>
+              <IncludePath></IncludePath>
             </VariousControls>
           </Aads>
           <LDads>
@@ -1084,7 +1084,7 @@
           <AfterMake>
             <RunUserProg1>1</RunUserProg1>
             <RunUserProg2>0</RunUserProg2>
-            <UserProg1Name>.keil\copy.bat mcuf_m3.lib</UserProg1Name>
+            <UserProg1Name>.keil\copy.bat support_cmsis_rtos_m3.lib</UserProg1Name>
             <UserProg2Name></UserProg2Name>
             <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
             <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
@@ -1178,7 +1178,7 @@
             <GenPPlst>0</GenPPlst>
             <AdsCpuType>"Cortex-M3"</AdsCpuType>
             <RvctDeviceName></RvctDeviceName>
-            <mOS>0</mOS>
+            <mOS>1</mOS>
             <uocRom>0</uocRom>
             <uocRam>0</uocRam>
             <hadIROM>1</hadIROM>
@@ -1338,10 +1338,10 @@
             <v6WtE>0</v6WtE>
             <v6Rtti>0</v6Rtti>
             <VariousControls>
-              <MiscControls></MiscControls>
+              <MiscControls>-fexceptions</MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>.\src\main;.\src\resources</IncludePath>
+              <IncludePath>.\src\main;.\src\resources;.\ref\mcuf\src\main</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -1359,7 +1359,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>..\framework</IncludePath>
+              <IncludePath></IncludePath>
             </VariousControls>
           </Aads>
           <LDads>
@@ -1585,7 +1585,7 @@
           <AfterMake>
             <RunUserProg1>1</RunUserProg1>
             <RunUserProg2>0</RunUserProg2>
-            <UserProg1Name>.keil\copy.bat mcuf_m4.lib</UserProg1Name>
+            <UserProg1Name>.keil\copy.bat support_cmsis_rtos_m4.lib</UserProg1Name>
             <UserProg2Name></UserProg2Name>
             <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
             <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
@@ -1839,7 +1839,7 @@
             <v6WtE>0</v6WtE>
             <v6Rtti>0</v6Rtti>
             <VariousControls>
-              <MiscControls></MiscControls>
+              <MiscControls>-fexceptions</MiscControls>
               <Define></Define>
               <Undefine></Undefine>
               <IncludePath>.\src\main;.\src\resources;.\ref\mcuf\src\main</IncludePath>
@@ -1860,7 +1860,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>..\framework</IncludePath>
+              <IncludePath></IncludePath>
             </VariousControls>
           </Aads>
           <LDads>
@@ -2086,7 +2086,7 @@
           <AfterMake>
             <RunUserProg1>1</RunUserProg1>
             <RunUserProg2>0</RunUserProg2>
-            <UserProg1Name>.keil\copy.bat mcuf_m4f.lib</UserProg1Name>
+            <UserProg1Name>.keil\copy.bat support_cmsis_rtos_m4f.lib</UserProg1Name>
             <UserProg2Name></UserProg2Name>
             <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
             <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
@@ -2180,7 +2180,7 @@
             <GenPPlst>0</GenPPlst>
             <AdsCpuType>"Cortex-M4"</AdsCpuType>
             <RvctDeviceName></RvctDeviceName>
-            <mOS>0</mOS>
+            <mOS>1</mOS>
             <uocRom>0</uocRom>
             <uocRam>0</uocRam>
             <hadIROM>1</hadIROM>
@@ -2340,10 +2340,10 @@
             <v6WtE>0</v6WtE>
             <v6Rtti>0</v6Rtti>
             <VariousControls>
-              <MiscControls></MiscControls>
+              <MiscControls>-fexceptions</MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>.\src\main;.\src\resources</IncludePath>
+              <IncludePath>.\src\main;.\src\resources;.\ref\mcuf\src\main</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -2361,7 +2361,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>..\framework</IncludePath>
+              <IncludePath></IncludePath>
             </VariousControls>
           </Aads>
           <LDads>
@@ -2587,7 +2587,7 @@
           <AfterMake>
             <RunUserProg1>1</RunUserProg1>
             <RunUserProg2>0</RunUserProg2>
-            <UserProg1Name>.keil\copy.bat mcuf_m7.lib</UserProg1Name>
+            <UserProg1Name>.keil\copy.bat support_cmsis_rtos_m7.lib</UserProg1Name>
             <UserProg2Name></UserProg2Name>
             <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
             <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
@@ -2681,7 +2681,7 @@
             <GenPPlst>0</GenPPlst>
             <AdsCpuType>"Cortex-M7"</AdsCpuType>
             <RvctDeviceName></RvctDeviceName>
-            <mOS>0</mOS>
+            <mOS>1</mOS>
             <uocRom>0</uocRom>
             <uocRam>0</uocRam>
             <hadIROM>1</hadIROM>
@@ -2841,10 +2841,10 @@
             <v6WtE>0</v6WtE>
             <v6Rtti>0</v6Rtti>
             <VariousControls>
-              <MiscControls></MiscControls>
+              <MiscControls>-fexceptions</MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>.\src\main;.\src\resources</IncludePath>
+              <IncludePath>.\src\main;.\src\resources;.\ref\mcuf\src\main</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -2862,7 +2862,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>..\framework</IncludePath>
+              <IncludePath></IncludePath>
             </VariousControls>
           </Aads>
           <LDads>
