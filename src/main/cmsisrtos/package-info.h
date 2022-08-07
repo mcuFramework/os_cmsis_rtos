@@ -4,8 +4,8 @@
  * 
  * SPDX-License-Identifier: MIT
  */
-#ifndef CMSISRTOS_932F0E05_49EA_4CC8_9C62_08057B82B91B
-#define CMSISRTOS_932F0E05_49EA_4CC8_9C62_08057B82B91B
+#ifndef CMSISRTOS_266D3FFC_7D73_45B2_AEDF_DED26F25ADB8
+#define CMSISRTOS_266D3FFC_7D73_45B2_AEDF_DED26F25ADB8
 
 /* ****************************************************************************************
  * Include folder
@@ -14,9 +14,14 @@
 /* ****************************************************************************************
  * Include
  */
+#include "CmsisRtosKernel.h"
+#include "CmsisRtosThread.h"
+#include "CmsisRtosTimer.h"
+#include "ThreadHandler.h"
+#include "TimerHandler.h"
 
 /* ****************************************************************************************
  * End of file
  */
 
-#endif /* CMSISRTOS_932F0E05_49EA_4CC8_9C62_08057B82B91B */
+#endif /* CMSISRTOS_266D3FFC_7D73_45B2_AEDF_DED26F25ADB8 */
