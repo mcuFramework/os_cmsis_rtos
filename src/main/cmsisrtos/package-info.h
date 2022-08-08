@@ -17,8 +17,6 @@
 #include "CmsisRtosKernel.h"
 #include "CmsisRtosThread.h"
 #include "CmsisRtosTimer.h"
-#include "ThreadHandler.h"
-#include "TimerHandler.h"
 
 /* ****************************************************************************************
  * End of file

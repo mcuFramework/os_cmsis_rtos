@@ -112,6 +112,15 @@ public mcuf::lang::rtos::InterfaceTimer{
      * @return false Timer狀態閒置
      */
     virtual bool timerIsStart(mcuf::lang::Memory& handler) override;
+    
+    /**
+     * @brief 
+     * 
+     * @param handler 
+     * @return uint32_t 
+     */
+    virtual uint32_t timerGetID(mcuf::lang::Memory& handler) override;
+    
   /* **************************************************************************************
    * Public Method
    */

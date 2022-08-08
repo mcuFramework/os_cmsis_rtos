@@ -147,6 +147,17 @@ bool CmsisRtosTimer::timerIsStart(mcuf::lang::Memory& handler){
   
   return osTimerIsRunning(h->id);
 }
+
+/**
+ * @brief 
+ * 
+ * @param handler 
+ * @return uint32_t 
+ */
+uint32_t CmsisRtosTimer::timerGetID(mcuf::lang::Memory& handler){
+  cmsis_rtos_timer_memory_t* h  = static_cast<cmsis_rtos_timer_memory_t*>(handler.pointer());
+  return reinterpret_cast<uint32_t>(h->id);
+}
 /* ****************************************************************************************
  * Public Method
  */
