@@ -95,7 +95,7 @@ uint32_t CmsisRtosTimer::timerGetHandlerSize(void) const{
 bool CmsisRtosTimer::timerStart(mcuf::lang::Memory& handler, uint32_t delay, bool mode, mcuf::function::Runnable& runnable){
   cmsis_rtos_timer_memory_t* h  = static_cast<cmsis_rtos_timer_memory_t*>(handler.pointer());
   
-  if(CmsisRtosTimer::timerIsStart(handler) == false)
+  if(CmsisRtosTimer::timerIsStart(handler) == true)
     return false;
   
   osTimerAttr_t attr;
@@ -109,7 +109,7 @@ bool CmsisRtosTimer::timerStart(mcuf::lang::Memory& handler, uint32_t delay, boo
   else
     h->id = osTimerNew(CmsisRtosTimer::entryPoint, osTimerPeriodic, &runnable, &attr);
   
-  return h->id;
+  return (osTimerStart(h->id, delay) == osOK);
 }
 
 /**
