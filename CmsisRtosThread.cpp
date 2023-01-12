@@ -184,7 +184,7 @@ mcuf::ThreadPriority CmsisRtosThread::threadGetPriority(const mcuf::Memory& hand
  * @return true 
  * @return false 
  */
-bool CmsisRtosThread::threatStart(mcuf::Memory& handler, mcuf::ThreadPriority priority, mcuf::Memory& stackMemory, mcuf::function::Runnable& runnable){
+bool CmsisRtosThread::threatStart(mcuf::Memory& handler, mcuf::ThreadPriority priority, mcuf::Memory& stackMemory, mcuf::Runnable& runnable){
   cmsis_rtos_thread_memory_t* h  = static_cast<cmsis_rtos_thread_memory_t*>(handler.pointer());
   if(reinterpret_cast<uint32_t>(h->id) != 0)
     return false;
@@ -300,7 +300,7 @@ bool CmsisRtosThread::threadNotify(uint32_t threadID) const{
 void CmsisRtosThread::entryPoint(void* attachment){
   ASSERT(attachment, __CLASSPATH__, ErrorCode::NULL_POINTER);
   
-  mcuf::function::Runnable* runnable = static_cast<mcuf::function::Runnable*>(attachment);
+  mcuf::Runnable* runnable = static_cast<mcuf::Runnable*>(attachment);
   runnable->run();
   osThreadExit();
 }

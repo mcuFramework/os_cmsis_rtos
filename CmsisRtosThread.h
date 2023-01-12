@@ -150,7 +150,7 @@ public mcuf::rtos::InterfaceThread{
      * @return true 
      * @return false 
      */
-    virtual bool threatStart(mcuf::Memory& handler, mcuf::ThreadPriority priority, mcuf::Memory& stackMemory, mcuf::function::Runnable& runnable) override;
+    virtual bool threatStart(mcuf::Memory& handler, mcuf::ThreadPriority priority, mcuf::Memory& stackMemory, mcuf::Runnable& runnable) override;
 
     /**
      * @brief 

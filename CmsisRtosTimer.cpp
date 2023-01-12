@@ -92,7 +92,7 @@ uint32_t CmsisRtosTimer::timerGetHandlerSize(void) const{
  * @param runnable 直行進入點
  * @return true TimerID
  */
-bool CmsisRtosTimer::timerStart(mcuf::Memory& handler, uint32_t delay, bool mode, mcuf::function::Runnable& runnable){
+bool CmsisRtosTimer::timerStart(mcuf::Memory& handler, uint32_t delay, bool mode, mcuf::Runnable& runnable){
   cmsis_rtos_timer_memory_t* h  = static_cast<cmsis_rtos_timer_memory_t*>(handler.pointer());
   
   if(CmsisRtosTimer::timerIsStart(handler) == true)
@@ -183,7 +183,7 @@ uint32_t CmsisRtosTimer::timerGetID(mcuf::Memory& handler){
  * @param attachment 
  */
 void CmsisRtosTimer::entryPoint(void* attachment){
-  mcuf::function::Runnable* runnable = static_cast<mcuf::function::Runnable*>(attachment);
+  mcuf::Runnable* runnable = static_cast<mcuf::Runnable*>(attachment);
   runnable->run();
 }
 
