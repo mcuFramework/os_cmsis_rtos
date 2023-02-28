@@ -25,7 +25,7 @@
  * -----------------------------------------------------------------------------
  */
  
-#include "cmsis_compiler.h"
+#include "bsp_arterytek_at32f415/cmsis_compiler.h"
 #include "rtx_os.h"
  
 // OS Idle Thread
@@ -53,8 +53,8 @@ __WEAK uint32_t osRtxErrorNotify (uint32_t code, void *object_id) {
       // Standard C/C++ library libspace not available: increase OS_THREAD_LIBSPACE_NUM
       break;
     case osRtxErrorClibMutex:
-      // Standard C/C++ library mutex initialization failed
-      break;
+      // Standard C/C++ library mutex initialization failed.
+    
     default:
       // Reserved
       break;
