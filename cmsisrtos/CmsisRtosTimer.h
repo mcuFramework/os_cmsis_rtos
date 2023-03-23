@@ -28,7 +28,7 @@ namespace cmsisrtos{
  * Class/Interface/Struct/Enum
  */  
 class cmsisrtos::CmsisRtosTimer extends mcuf::Object implements 
-public mcuf::rtos::InterfaceTimer{
+        public rtos::InterfaceTimer{
 
   /* **************************************************************************************
    * Variable <Public>
@@ -93,7 +93,7 @@ public mcuf::rtos::InterfaceTimer{
      * @param runnable 直行進入點
      * @return true TimerID
      */
-    virtual bool timerStart(mcuf::Memory& handler, uint32_t delay, bool mode, mcuf::Runnable& runnable) override;
+    virtual bool timerStart(mcuf::Memory& handler, uint32_t delay, bool mode, func::Runnable& runnable) override;
 
     /**
      * @brief 停止Timer

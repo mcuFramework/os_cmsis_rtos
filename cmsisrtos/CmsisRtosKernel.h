@@ -28,7 +28,7 @@ namespace cmsisrtos{
  * Class/Interface/Struct/Enum
  */  
 class cmsisrtos::CmsisRtosKernel extends mcuf::Object implements
-public mcuf::rtos::InterfaceKernel{
+        public rtos::InterfaceKernel{
 
   /* **************************************************************************************
    * Variable <Public>

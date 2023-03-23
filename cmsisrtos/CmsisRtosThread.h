@@ -28,7 +28,7 @@ namespace cmsisrtos{
  * Class/Interface/Struct/Enum
  */  
 class cmsisrtos::CmsisRtosThread extends mcuf::Object implements
-public mcuf::rtos::InterfaceThread{
+        public rtos::InterfaceThread{
 
   /* **************************************************************************************
    * Variable <Public>
@@ -150,7 +150,7 @@ public mcuf::rtos::InterfaceThread{
      * @return true 
      * @return false 
      */
-    virtual bool threatStart(mcuf::Memory& handler, mcuf::ThreadPriority priority, mcuf::Memory& stackMemory, mcuf::Runnable& runnable) override;
+    virtual bool threatStart(mcuf::Memory& handler, mcuf::ThreadPriority priority, mcuf::Memory& stackMemory, func::Runnable& runnable) override;
 
     /**
      * @brief 
