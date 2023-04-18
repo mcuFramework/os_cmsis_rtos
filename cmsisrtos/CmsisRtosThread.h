@@ -104,9 +104,9 @@ class cmsisrtos::CmsisRtosThread extends mcuf::Object implements
     /**
      * @brief 
      * 
-     * @return mcuf::ThreadState 
+     * @return sys::ThreadState 
      */
-    virtual mcuf::ThreadState threadGetState(const mcuf::Memory& handler) const override;
+    virtual sys::ThreadState threadGetState(const mcuf::Memory& handler) const override;
 
     /**
      * @brief 
@@ -136,9 +136,9 @@ class cmsisrtos::CmsisRtosThread extends mcuf::Object implements
      * @brief 
      * 
      * @param thread 
-     * @return mcuf::ThreadPriority 
+     * @return sys::ThreadPriority 
      */
-    virtual mcuf::ThreadPriority threadGetPriority(const mcuf::Memory& handler) const override;
+    virtual sys::ThreadPriority threadGetPriority(const mcuf::Memory& handler) const override;
       
     /**
      * @brief 
@@ -150,15 +150,15 @@ class cmsisrtos::CmsisRtosThread extends mcuf::Object implements
      * @return true 
      * @return false 
      */
-    virtual bool threatStart(mcuf::Memory& handler, mcuf::ThreadPriority priority, mcuf::Memory& stackMemory, func::Runnable& runnable) override;
+    virtual bool threatStart(mcuf::Memory& handler, sys::ThreadPriority priority, mcuf::Memory& stackMemory, func::Runnable& runnable) override;
 
     /**
      * @brief 
      * 
      * @param thread 
-     * @return mcuf::ThreadPriority 
+     * @return sys::ThreadPriority 
      */
-    virtual bool threadSetPriority(mcuf::Memory& handler,  mcuf::ThreadPriority) const override;
+    virtual bool threadSetPriority(mcuf::Memory& handler,  sys::ThreadPriority) const override;
 
     /**
      * @brief 

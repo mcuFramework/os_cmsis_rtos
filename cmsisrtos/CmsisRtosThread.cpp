@@ -102,35 +102,35 @@ uint32_t CmsisRtosThread::threadGetHandlerSize(void) const{
 /**
  * @brief 
  * 
- * @return mcuf::ThreadState 
+ * @return sys::ThreadState 
  */
-mcuf::ThreadState CmsisRtosThread::threadGetState(const mcuf::Memory& handler) const{
+sys::ThreadState CmsisRtosThread::threadGetState(const mcuf::Memory& handler) const{
   cmsis_rtos_thread_memory_t* h  = static_cast<cmsis_rtos_thread_memory_t*>(handler.pointer());
   
   switch(osThreadGetState(h->id)){
     case osThreadInactive:
-      return mcuf::ThreadState::INACTIVE;
+      return sys::ThreadState::INACTIVE;
     
     case osThreadReady:
-      return mcuf::ThreadState::READY;
+      return sys::ThreadState::READY;
     
     case osThreadRunning:
-      return mcuf::ThreadState::RUNNING;
+      return sys::ThreadState::RUNNING;
     
     case osThreadBlocked:
-      return mcuf::ThreadState::BLOCKED;
+      return sys::ThreadState::BLOCKED;
     
     case osThreadTerminated:
-      return mcuf::ThreadState::TERMINATED;
+      return sys::ThreadState::TERMINATED;
     
     case osThreadError:
-      return mcuf::ThreadState::ERROR;
+      return sys::ThreadState::ERROR;
     
     case osThreadReserved:
-      return mcuf::ThreadState::ERROR;
+      return sys::ThreadState::ERROR;
   }
   
-  return mcuf::ThreadState::ERROR;
+  return sys::ThreadState::ERROR;
 }
 /**
  * @brief 
@@ -169,11 +169,11 @@ const char* CmsisRtosThread::threadGetName(const mcuf::Memory& handler) const{
  * @brief 
  * 
  * @param thread 
- * @return mcuf::ThreadPriority 
+ * @return sys::ThreadPriority 
  */
-mcuf::ThreadPriority CmsisRtosThread::threadGetPriority(const mcuf::Memory& handler) const{
+sys::ThreadPriority CmsisRtosThread::threadGetPriority(const mcuf::Memory& handler) const{
   cmsis_rtos_thread_memory_t* h  = static_cast<cmsis_rtos_thread_memory_t*>(handler.pointer());
-  return static_cast<mcuf::ThreadPriority>(osThreadGetPriority(h->id));
+  return static_cast<sys::ThreadPriority>(osThreadGetPriority(h->id));
 }
 /**
  * @brief 
@@ -184,7 +184,7 @@ mcuf::ThreadPriority CmsisRtosThread::threadGetPriority(const mcuf::Memory& hand
  * @return true 
  * @return false 
  */
-bool CmsisRtosThread::threatStart(mcuf::Memory& handler, mcuf::ThreadPriority priority, mcuf::Memory& stackMemory, func::Runnable& runnable){
+bool CmsisRtosThread::threatStart(mcuf::Memory& handler, sys::ThreadPriority priority, mcuf::Memory& stackMemory, func::Runnable& runnable){
   cmsis_rtos_thread_memory_t* h  = static_cast<cmsis_rtos_thread_memory_t*>(handler.pointer());
   if(reinterpret_cast<uint32_t>(h->id) != 0)
     return false;
@@ -222,9 +222,9 @@ bool CmsisRtosThread::threatStart(mcuf::Memory& handler, mcuf::ThreadPriority pr
  * @brief 
  * 
  * @param thread 
- * @return mcuf::ThreadPriority 
+ * @return sys::ThreadPriority 
  */
-bool CmsisRtosThread::threadSetPriority(mcuf::Memory& handler, mcuf::ThreadPriority priority) const{
+bool CmsisRtosThread::threadSetPriority(mcuf::Memory& handler, sys::ThreadPriority priority) const{
   cmsis_rtos_thread_memory_t* h  = static_cast<cmsis_rtos_thread_memory_t*>(handler.pointer());
   return (osThreadSetPriority(h->id, static_cast<osPriority_t>(priority)) == osOK);
 }
